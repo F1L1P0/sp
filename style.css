@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.btn{
+    @apply text-gray-900 bg-clip-padding bg-gradient-to-r from-yellow-400 to-orange-400 py-2.5 px-5 rounded-md hover:from-yellow-400 hover:to-yellow-400;
+}
