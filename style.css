@@ -6,6 +6,17 @@ html{
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #7f7f7f;
+    --secondary-color: #fff;
+  }
+
 .btn{
     @apply text-gray-900 bg-clip-padding bg-gradient-to-r from-yellow-400 to-orange-400 py-2.5 px-5 rounded-md hover:from-yellow-400 hover:to-yellow-400;
+}
+
+.toggleNav{
+    height: 0;
+    opacity: 0;
+    transform: translateY(-10rem);
 }

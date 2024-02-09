@@ -7,7 +7,7 @@
     <title>Šikovné podlahy</title>
   </head>
   <body>
-    <nav class="bg-white border-gray-200 dark:bg-black fixed top-0 z-10 w-full">
+    <nav class="bg-white border-gray-200 dark:bg-black fixed top-0 z-20 w-full">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
@@ -18,12 +18,12 @@
             class="h-8"
             alt="Flowbite Logo" />
           <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white"
             >ŠIKOVNÉ PODLAHY</span
           >
         </a>
         <button
-          data-collapse-toggle="navbar-default"
+          id="navbtn"
           type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
@@ -48,7 +48,7 @@
             class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href="#about"
                 class="block py-2.5 px-5 text-white hover:text-yellow-400 md:p-0 dark:text-white md:dark:text-white"
                 aria-current="page"
                 >O Nás</a
@@ -56,16 +56,21 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 class="block py-2.5 px-5 text-gray-900 rounded md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:text-yellow-400 md:dark:hover:bg-transparent"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="#" class="btn">Kontakt</a>
+              <a href="#contact" class="btn">Kontakt</a>
             </li>
           </ul>
         </div>
+      </div>
+      <div id="navDropdown" class="text-white md:h-0 md:hidden toggleNav flex flex-col items-center gap-3 h-36 bg-black transition-all ease-in-out duration-500">
+        <a href="#about">O nás</a>
+        <a href="#portfolio">Portfolio</a>
+        <a class="btn" href="#contact">Kontakt</a>
       </div>
     </nav>
     <section id="hero">
@@ -73,35 +78,35 @@
         <div
           class="bg-[url('https://picsum.photos/2000/1000')] w-full h-screen brightness-50 bg-cover bg-center">
       </div>
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
-        <p class="text-5xl pb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400">Vezmeme to pěkně od podlahy.</p>
-        <p class="text-xl pb-8 text-gray-300">Pokládáme podlahy. Od malých prostor až po velké kanceláře.</p>
-        <a class="btn" href="#">ZOBRAZIT PORTFOLIO</a>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-6 text-center md:text-left">
+        <p class="text-3xl md:text-5xl pb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400">Vezmeme to pěkně od podlahy.</p>
+        <p class="text-xl pb-8 text-[#c8c7c6]">Pokládáme podlahy. Od malých prostor až po velké kanceláře.</p>
+        <a class="btn text-center" href="#portfolio">ZOBRAZIT PORTFOLIO</a>
       </div>
     </section>
     <section class="w-full px-6 md:px-20" id="about">
       <main class="flex flex-col justify-center items-center">
-        <p class="py-16">Od návrhu po pokládku.</p>
-        <p class="pb-36">"Napíšeme si, přijedeme, vymyslíme, zaměříme, doporučíme a položíme! Tak jednoduché to je."</p>
-        <div class="flex justify-center gap-20 pb-20">
-          <div class="flex basis-5/12"><p class="text-gray-500 text-2xl">Hledáte kvalitní podlahy od profesionálního dodavatele?
+        <p class="py-16 text-3xl md:text-5xl text-center text-primary-color">Od návrhu po pokládku.</p>
+        <p class="pb-36 text-3xl md:text-4xl text-center text-primary-color">"Napíšeme si, přijedeme, vymyslíme, zaměříme, doporučíme a položíme! Tak jednoduché to je."</p>
+        <div class="flex flex-col md:flex-row justify-center gap-10 pb-20">
+          <div class="flex basis-5/12"><p class="text-primary-color text-lg md:text-2xl">Hledáte kvalitní podlahy od profesionálního dodavatele?
             Podlaha je důležitou investicí do interiéru Vašeho domu či bytu a zaslouží si náležitou pozornost. Pomůžeme Vám vybrat vhodný typ podlahy a samozřejmě ji pečlivě nainstalujeme. 
             Nabízíme širokou škálu podlahových krytin od dřevěných podlah, vinylu, koberců, Kvalitní nivelace podlahy je samozřejmostí.
             Všechny naše podlahové krytiny jsou vysoce kvalitní a garantujeme Vám jejich trvanlivost, odolnost a snadnou údržbu. </p></div>
-          <div class="flex basis-5/12"><p class="text-gray-500 text-2xl">Používáme moderní technologie a neustále sledujeme novinky na trhu, abychom mohli nabídnout to nejlepší. Naší prioritou je spokojenost zákazníka a kvalitní a profesionální provedení práce.
+          <div class="flex basis-5/12"><p class="text-primary-color text-lg md:text-2xl">Používáme moderní technologie a neustále sledujeme novinky na trhu, abychom mohli nabídnout to nejlepší. Naší prioritou je spokojenost zákazníka a kvalitní a profesionální provedení práce.
             Pokud tedy hledáte šikovnou podlahu a spolehlivého dodavatele nejen na Moravě, neváhejte nás kontaktovat.
             Rádi Vám pomůžeme s výběrem a podládkou podlahy dle Vašich požadavků.</p></div>
         </div>
       </main>
     </section>
     <section>
-      <div class="w-full bg-gray-900">
-        <div class="flex justify-around py-20">
-          <p class="text-gray-400 text-4xl">Máte zájem o nezávaznou poptávku?</p>
-          <a href="#" class="btn">Kontaktujte nás</a>
+      <div class="w-full bg-[#111111]">
+        <div class="flex md:justify-around py-20 flex-col md:flex-row justify-center items-center gap-5">
+          <p class="text-[#b8b8b8] text-4xl text-center">Máte zájem o nezávaznou poptávku?</p>
+          <a href="#contact" class="btn">Kontaktujte nás</a>
         </div>
         <div class=" bg-[url('https://picsum.photos/2000/1000')] w-full h-[500px] brightness-50 bg-cover bg-center text-xl flex items-center justify-end">
-          <div class="flex flex-col justify-center items-center w-1/2 h-full relative after:absolute after:w-full after:h-full after:bg-black after:opacity-90">
+          <div class="flex flex-col justify-center items-center w-1/2 h-full relative after:absolute after:w-full after:h-full after:bg-black after:opacity-90 gap-5 text-center">
             <p class="text-gray-100 z-10">Jsme spolehliví</p>
             <p class="text-gray-100 z-10">Na čem se domluvíme, to platí!</p>
           </div>
@@ -109,18 +114,18 @@
       </div>
     </section>
     <section>
-      <div class="flex justify-between w-full h-fit pt-2 pb-8 px-16 my-20 gap-28 bg-gray-400">
-        <div class="flex basis-3/12 flex-col"><p class="p-4 text-center text-2xl">Kvalitní</p>
+      <div class="flex-col flex md:flex-row justify-center md:justify-between w-full h-fit py-8 px-16 my-20 gap-10 md:gap-28 bg-[#e1e1e1] text-center">
+        <div class="flex basis-full md:basis-3/12 flex-col items-center justify-center"><p class="text-center text-2xl pb-2">Kvalitní</p>
         <p>
           Používáme kvalitní a prověřené materiály s ohledem na vysokou uživatelskou kvalitu.
         </p>
       </div>
-        <div class="flex basis-3/12 flex-col"><p class="p-4 text-center text-2xl">Moderní</p>
+        <div class="flex basis-full md:basis-3/12 flex-col items-center justify-center"><p class="text-center text-2xl pb-2">Moderní</p>
         <p>
           Využíváme moderní postupy při samotné realizaci.
         </p>
       </div>
-        <div class="flex basis-3/12 flex-col"><p class="p-4 text-center text-2xl">Šikovné</p>
+        <div class="flex basis-full md:basis-3/12 flex-col items-center justify-center"><p class="text-center text-2xl pb-2">Šikovné</p>
         <p>
           Podlahy od nás jsou jedním slovem šikovné. Kvalitní, moderní a levné.
         </p>
@@ -129,7 +134,7 @@
     </section>
     <section>
       <div class=" bg-[url('https://picsum.photos/2000/1000')] w-full h-[500px] brightness-50 bg-cover bg-center text-xl flex items-center">
-        <div class="flex flex-col justify-center items-center w-1/2 h-full relative after:absolute after:w-full after:h-full after:bg-black after:opacity-90">
+        <div class="flex flex-col justify-center items-center w-1/2 h-full relative after:absolute after:w-full after:h-full after:bg-black after:opacity-90 text-lg md:text-2xl text-center gap-5">
           <p class="text-gray-100 z-10">Jsme pracovití</p>
           <p class="text-gray-100 z-10">Naše práce nás baví. Od malých prostor až po kanceláře.</p>
         </div>
@@ -137,34 +142,34 @@
     </section>
     <section id="portfolio" class="py-20 px-20 flex flex-col items-center">
       <div class="flex flex-col items-center justify-center pt-16 pb-12">
-        <p class="pb-10 text-2xl">Portfolio</p>
-        <p>Zde si můžete prohlédnout ukázku naší práce.
+        <p class="pb-10 text-3xl md:text-5xl text-primary-color">Portfolio</p>
+        <p class="text-center text-lg md:text-4xl text-primary-color">Zde si můžete prohlédnout ukázku naší práce.
         </p>
       </div>
       <div class="flex flex-wrap -mx-4">
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" onclick="openModal();currentSlide(1)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" onclick="openModal();currentSlide(1)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" onclick="openModal();currentSlide(2)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" onclick="openModal();currentSlide(2)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" onclick="openModal();currentSlide(3)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" onclick="openModal();currentSlide(3)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" onclick="openModal();currentSlide(4)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" onclick="openModal();currentSlide(4)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" onclick="openModal();currentSlide(5)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" onclick="openModal();currentSlide(5)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" onclick="openModal();currentSlide(6)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" onclick="openModal();currentSlide(6)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" onclick="openModal();currentSlide(7)" class="rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" onclick="openModal();currentSlide(7)" class="rounded-md hover:shadow-lg cursor-pointer min-w-44">
         </div>
         <div class="w-full sm:w-1/2 md:w-1/4 px-4 mb-8">
-          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" onclick="openModal();currentSlide(8)" class=" rounded-md hover:shadow-lg cursor-pointer">
+          <img loading="lazy" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" onclick="openModal();currentSlide(8)" class=" rounded-md hover:shadow-lg cursor-pointe min-w-44r">
         </div>
       </div>
     
@@ -217,28 +222,28 @@
           <!-- Thumbnail image controls -->
           <div class="flex justify-center">
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" onclick="currentSlide(1)" alt="Nature">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" onclick="currentSlide(1)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" onclick="currentSlide(2)" alt="Snow">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" onclick="currentSlide(2)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" onclick="currentSlide(3)" alt="Mountains">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" onclick="currentSlide(3)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" onclick="currentSlide(4)" alt="Lights">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" onclick="currentSlide(4)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" onclick="currentSlide(5)" alt="Nature">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" onclick="currentSlide(5)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" onclick="currentSlide(6)" alt="Snow">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" onclick="currentSlide(6)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" onclick="currentSlide(7)" alt="Mountains">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" onclick="currentSlide(7)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" onclick="currentSlide(8)" alt="Lights">
+              <img loading="lazy" class="demo cursor-pointer" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" onclick="currentSlide(8)" alt="obrázek z galerie">
             </div>
           </div>
         </div>
@@ -247,41 +252,43 @@
     <section>
       <div class="w-full h-fit bg-[url('https://picsum.photos/2000/1000')] flex gap-20 items-center justify-center py-40 relative">
         <div class="absolute w-full h-full bg-black opacity-75"></div>
+        <div class="flex flex-col justify-center items-center md:flex-row gap-10">
         <div class="z-10">
           <p class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400 text-center text-4xl">20000+</p>
-          <p class="text-white">Tolik metrů čtverečních
+          <p class="text-primary-color">Tolik metrů čtverečních
             máme za sebou.</p>
         </div>
         <div class="z-10">
           <p class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400 text-center text-4xl">8+</p>
-          <p class="text-white">Naše praxe v oboru.</p>
+          <p class="text-primary-color">Naše praxe v oboru.</p>
+        </div>
         </div>
       </div>
     </section>
-    <footer class="text-white w-full flex justify-center flex-col">
-      <div class="bg-gray-800 w-full flex justify-center">
-    <div class="flex w-full py-20 max-w-5xl items-center justify-between">
-      <div class="flex flex-col">
-        <p class="text-4xl">Šikovné podlahy</p>
+    <footer class="text-primary-color w-full flex justify-center flex-col" id="contact">
+      <div class="bg-gray-800 w-full flex justify-center px-8">
+    <div class="flex flex-col md:flex-row w-full justify-center py-20 max-w-5xl items-center md:justify-between gap-5 text-center">
+      <div class="flex flex-col gap-5">
+        <p class="text-3xl md:text-5xl pb-4">Šikovné podlahy</p>
         <p>Profesionální pokládka podlah
           Dodávka materiálu
           Autodoprava </p>
       </div>
       <div class="flex flex-col">
-        <p>Kontakt</p>
+        <p class="text-lg md:text-2xl">Kontakt</p>
         <div class="py-6">
           <p>Družstevní</p>
           <p>Rakvice</p>
           <p>691 03</p>
         </div>
-        <p>Telefon: <a href="tel:+420739311233">+420 739 311 233</a></p>
-        <p>Email: <a href="mailto:info@sikovnepodlahy.cz">info@sikovnepodlahy.cz</a></p>
+        <p>Telefon: <a class="hover:text-yellow-400 duration-300 ease-in-out transition-all hover:underline text-white underline" href="tel:+420739311233">+420 739 311 233</a></p>
+        <p>Email: <a class="hover:text-yellow-400 duration-300 ease-in-out transition-all hover:underline text-white underline" href="mailto:info@sikovnepodlahy.cz">info@sikovnepodlahy.cz</a></p>
       </div>
       </div>
     </div>
     <div class="w-full bg-black p-4 flex justify-center">
-      <div class="w-full max-w-5xl flex justify-between">
-          <span class="text-white">Copyright © 2024  Filip Drábek</span>
+      <div class="w-full max-w-5xl flex justify-between items-center">
+          <span class="text-white text-sm">Copyright © 2024 Filip Drábek</span>
             <ul class="flex gap-3">
               <li>
                 <a href="#!" role="button">

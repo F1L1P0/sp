@@ -24,7 +24,7 @@ function showSlides(n) {
   var i
   var slides = document.getElementsByClassName('mySlides')
   var dots = document.getElementsByClassName('demo')
-  var captionText = document.getElementById('caption')
+  //var captionText = document.getElementById('caption')
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -39,5 +39,14 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = 'block'
   dots[slideIndex - 1].className += ' active'
-  captionText.innerHTML = dots[slideIndex - 1].alt
+  //captionText.innerHTML = dots[slideIndex - 1].alt
 }
+
+const navDropdown = document.querySelector('#navDropdown')
+const navBtn = document.querySelector('#navBtn')
+
+document.addEventListener('click', function (e) {
+  const target = e.target
+  if (target === navDropdown || target.closest('#navBtn')) return
+  navDropdown.classList.toggle('toggleNav') // Use the correct class name here
+})
