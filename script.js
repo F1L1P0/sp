@@ -47,9 +47,6 @@ const navBtn = document.querySelector('#navBtn')
 
 document.addEventListener('click', function (e) {
   const target = e.target
-  console.log('====================================')
-  console.log(target)
-  console.log('====================================')
   if (target === navDropdown || target.closest('#navBtn')) {
     navDropdown.classList.toggle('toggleNav')
   } else return
