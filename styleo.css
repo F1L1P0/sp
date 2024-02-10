@@ -1553,6 +1553,14 @@ video {
   font-weight: 600;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .text-\[\#b8b8b8\] {
   --tw-text-opacity: 1;
   color: rgb(184 184 184 / var(--tw-text-opacity));
@@ -1683,6 +1691,7 @@ video {
 
 html{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
