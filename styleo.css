@@ -839,6 +839,10 @@ video {
   height: 2rem;
 }
 
+.h-\[22rem\] {
+  height: 22rem;
+}
+
 .h-\[500px\] {
   height: 500px;
 }
@@ -852,57 +856,37 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
 .h-max {
   height: -moz-max-content;
   height: max-content;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[25rem\] {
-  height: 25rem;
-}
-
-.h-\[22rem\] {
-  height: 22rem;
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-20 {
   max-height: 5rem;
 }
 
-.max-h-36 {
-  max-height: 9rem;
-}
-
 .max-h-32 {
   max-height: 8rem;
 }
 
-.max-h-\[38\] {
-  max-height: 38;
+.max-h-36 {
+  max-height: 9rem;
 }
 
 .max-h-\[10rem\] {
   max-height: 10rem;
 }
 
-.max-h-\[25rem\] {
-  max-height: 25rem;
-}
-
 .max-h-\[22rem\] {
   max-height: 22rem;
+}
+
+.max-h-\[80px\] {
+  max-height: 80px;
 }
 
 .min-h-72 {
@@ -929,6 +913,10 @@ video {
   width: 91.666667%;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -947,10 +935,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .min-w-36 {
@@ -1287,24 +1271,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\.\/images\/img1\.webp\] {
-  background-color: ./images/img1.webp;
-}
-
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'https\:\/\/picsum\.photos\/2000\/1000\'\)\] {
-  background-image: url('https://picsum.photos/2000/1000');
+.bg-\[url\(\'\.\/fotky\/img1\.webp\'\)\] {
+  background-image: url('./fotky/img1.webp');
+}
+
+.bg-\[url\(\'\.\/fotky\/img5\.webp\'\)\] {
+  background-image: url('./fotky/img5.webp');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/fotky\/img1\.webp\'\)\] {
-  background-image: url('./fotky/img1.webp');
 }
 
 .from-pink-500 {
@@ -1376,14 +1356,14 @@ video {
      object-fit: cover;
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
 .object-bottom {
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-0 {
@@ -1795,7 +1775,6 @@ html{
 }
 
 .parallax {
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1822,11 +1801,6 @@ html{
   width: 100%;
 }
 
-.after\:w-screen::after {
-  content: var(--tw-content);
-  width: 100vw;
-}
-
 .after\:bg-black::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -1838,14 +1812,14 @@ html{
   background-image: url('./fotky/texture-fabric.png');
 }
 
+.after\:opacity-20::after {
+  content: var(--tw-content);
+  opacity: 0.2;
+}
+
 .after\:opacity-90::after {
   content: var(--tw-content);
   opacity: 0.9;
-}
-
-.after\:opacity-40::after {
-  content: var(--tw-content);
-  opacity: 0.4;
 }
 
 .hover\:from-yellow-400:hover {
@@ -1886,14 +1860,6 @@ html{
 }
 
 @media (min-width: 640px) {
-  .sm\:h-\[25rem\] {
-    height: 25rem;
-  }
-
-  .sm\:max-h-\[25rem\] {
-    max-height: 25rem;
-  }
-
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1916,24 +1882,12 @@ html{
     height: 0px;
   }
 
-  .md\:h-\[30rem\] {
-    height: 30rem;
-  }
-
-  .md\:h-\[25rem\] {
-    height: 25rem;
-  }
-
   .md\:h-\[32rem\] {
     height: 32rem;
   }
 
-  .md\:max-h-\[25rem\] {
-    max-height: 25rem;
-  }
-
-  .md\:max-h-\[30rem\] {
-    max-height: 30rem;
+  .md\:max-h-\[120px\] {
+    max-height: 120px;
   }
 
   .md\:max-h-\[32rem\] {
@@ -1976,11 +1930,6 @@ html{
 
   .md\:border-0 {
     border-width: 0px;
-  }
-
-  .md\:object-cover {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 
   .md\:p-0 {

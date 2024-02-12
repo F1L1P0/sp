@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styleo.css" />
-    <title>Šikovné podlahy</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Šikovné podlahy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styleo.css" />
+</head>
   <body>
     <nav class="bg-black border-gray-200 fixed top-0 z-20 w-full">
       <div
@@ -19,16 +19,16 @@
           <img loading="lazy"
             src="./fotky/logo.png"
             class="h-10"
-            alt="Flowbite Logo" />
+            alt="Logo" />
           <span
-            class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white"
             >ŠIKOVNÉ PODLAHY</span
           >
         </a>
         <button
           id="navBtn"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -48,11 +48,11 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
             <li>
               <a
                 href="#about"
-                class="block py-2.5 px-5 text-white hover:text-yellow-400 md:p-0 dark:text-white md:dark:text-white"
+                class="block py-2.5 px-5 text-white hover:text-yellow-400 md:p-0"
                 aria-current="page"
                 >O Nás</a
               >
@@ -60,7 +60,7 @@
             <li>
               <a
                 href="#portfolio"
-                class="block py-2.5 px-5 text-gray-900 rounded md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:text-yellow-400 md:dark:hover:bg-transparent"
+                class="block py-2.5 px-5 text-white rounded md:border-0 md:hover:text-yellow-400 md:p-0 "
                 >Portfolio</a
               >
             </li>
@@ -71,15 +71,15 @@
         </div>
       </div>
       <div id="navDropdown" class="text-white md:h-0 md:hidden toggleNav flex flex-col items-center gap-3 h-36 bg-black transition-all ease-in-out duration-500">
-        <a href="#about">O nás</a>
-        <a href="#portfolio">Portfolio</a>
+        <a class="text-white" href="#about">O nás</a>
+        <a class="text-white" href="#portfolio">Portfolio</a>
         <a class="btn" href="#contact">Kontakt</a>
       </div>
     </nav>
     <section id="hero">
       <div class="relative">
         <div
-          class="bg-[url('./fotky/img1.webp')] w-full h-screen brightness-50 parallax relative after:absolute after:w-full after:h-screen after:bg-[url('./fotky/texture-fabric.png')] after:opacity-40">
+          class="bg-[url('./fotky/img5.webp')] w-full h-screen brightness-50 parallax relative after:absolute after:w-full after:h-screen after:bg-[url('./fotky/texture-fabric.png')] after:opacity-20">
       </div>
       <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-6 text-center md:text-left">
         <p class=" text-center text-3xl md:text-5xl pb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400">Vezmeme to pěkně od podlahy.</p>
@@ -225,28 +225,28 @@
           <!-- Thumbnail image controls -->
           <div class="flex justify-center">
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img1.webp" onclick="currentSlide(1)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img1.webp" onclick="currentSlide(1)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img2.webp" onclick="currentSlide(2)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img2.webp" onclick="currentSlide(2)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img3.webp" onclick="currentSlide(3)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img3.webp" onclick="currentSlide(3)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img4.webp" onclick="currentSlide(4)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img4.webp" onclick="currentSlide(4)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img5.webp" onclick="currentSlide(5)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img5.webp" onclick="currentSlide(5)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img6.webp" onclick="currentSlide(6)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img6.webp" onclick="currentSlide(6)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img7.webp" onclick="currentSlide(7)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img7.webp" onclick="currentSlide(7)" alt="obrázek z galerie">
             </div>
             <div class="w-1/8 p-2">
-              <img loading="lazy" class="demo cursor-pointer h-full object-cover" src="./fotky/img8.webp" onclick="currentSlide(8)" alt="obrázek z galerie">
+              <img loading="lazy" class="demo cursor-pointer h-full object-cover max-h-[80px] md:max-h-[120px]" src="./fotky/img8.webp" onclick="currentSlide(8)" alt="obrázek z galerie">
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@
         <div class="flex flex-col justify-center items-center md:flex-row gap-10">
         <div class="z-10">
           <p class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-400 text-center text-4xl">20000+</p>
-          <p class="text-primary-color">Tolik metrů čtverečních
+          <p class="text-primary-color text-center">Tolik metrů čtverečních
             máme za sebou.</p>
         </div>
         <div class="z-10">
@@ -272,7 +272,7 @@
       <div class="bg-gray-800 w-full flex justify-center px-8">
     <div class="flex flex-col md:flex-row w-full justify-center py-20 max-w-5xl items-center md:justify-between gap-5 text-center">
       <div class="flex flex-col gap-5">
-        <p class="text-3xl md:text-5xl pb-4">Šikovné podlahy</p>
+        <p class="text-3xl md:text-5xl pb-4  text-white">Šikovné podlahy</p>
         <p>Profesionální pokládka podlah
           Dodávka materiálu
           Autodoprava </p>
@@ -340,6 +340,6 @@
   </div> 
 
     </footer>
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
   </body>
 </html>
