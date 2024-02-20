@@ -75,8 +75,12 @@ document.addEventListener('scroll', scanDocument)
 
 const parallax_bg = document.querySelectorAll('.parallax')
 
-parallax_bg.forEach((image) => {
-  window.addEventListener('scroll', () => {
+function updateParallax() {
+  parallax_bg.forEach((image) => {
     image.style.backgroundPosition = `50% ${window.scrollY / 2}px`
   })
+}
+
+window.addEventListener('scroll', () => {
+  requestAnimationFrame(updateParallax)
 })

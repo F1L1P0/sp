@@ -901,10 +901,6 @@ video {
   width: 0.25rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1625,11 +1621,6 @@ video {
   font-weight: 600;
 }
 
-.text-\[\#b8b8b8\] {
-  --tw-text-opacity: 1;
-  color: rgb(184 184 184 / var(--tw-text-opacity));
-}
-
 .text-\[\#c8c7c6\] {
   --tw-text-opacity: 1;
   color: rgb(200 199 198 / var(--tw-text-opacity));
@@ -1706,6 +1697,10 @@ video {
   opacity: 0.25;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .opacity-75 {
   opacity: 0.75;
 }
@@ -1771,6 +1766,8 @@ html{
 :root {
   --primary-color: #7f7f7f;
   --secondary-color: #fff;
+  --anchor-color: #fb923c;
+  --anchor-color__secondary: #facc15;
 }
 
 .btn {
@@ -1802,9 +1799,26 @@ html{
   transform: translateY(-10rem);
 }
 
+.anchor{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 50%;
+  bottom: 0%;
+  margin-bottom: 1.5rem;
+  border-bottom:  solid 3px var(--anchor-color);
+  border-right:  solid 3px var(--anchor-color);
+  transform: rotate(45deg) translate(-50%);
+  padding: 1rem;
+  z-index: 3;
+}
+
+.anchor:hover{
+  border-color: var(--anchor-color__secondary);
+}
+
 .parallax {
-  /* background-attachment: fixed; */
-  transition: 0s linear;
+  transition: 0s all linear;
   background-size: cover;
   background-repeat: repeat-y;
   background-position: 50% 0;
@@ -1866,9 +1880,9 @@ footer p {
   opacity: 0.2;
 }
 
-.after\:opacity-90::after {
+.after\:opacity-60::after {
   content: var(--tw-content);
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 .hover\:from-yellow-400:hover {
@@ -1941,6 +1955,10 @@ footer p {
 
   .md\:max-h-\[32rem\] {
     max-height: 32rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-1\/4 {
