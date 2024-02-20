@@ -8,10 +8,21 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+.hide {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+  
+.show {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
 :root {
     --primary-color: #7f7f7f;
     --secondary-color: #fff;
-  }
+}
 
 .btn{
     @apply text-gray-900 bg-clip-padding bg-gradient-to-r from-yellow-400 to-orange-400 py-2.5 px-5 rounded-md hover:from-yellow-400 hover:to-yellow-400;
@@ -24,8 +35,28 @@ html{
 }
 
 .parallax {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    transition: 0s linear;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: 50% 0;   
+}
+
+.hero-bg{
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+@media screen and (width>767px) {
+    .hero-bg{
+        background-position: center;
+    }
+}
+
+p{
+    font-size: clamp(1rem,2vw,1.5rem);
+}
+
+footer p {
+    font-size: clamp(1rem,2vw,1.3rem);
+}

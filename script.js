@@ -45,3 +45,38 @@ document.addEventListener('click', function (e) {
     navDropdown.classList.toggle('toggleNav')
   } else return
 })
+
+//appear animation
+
+function isVisible(element) {
+  let elementBox = element.getBoundingClientRect()
+  let distanceFromTop = -200
+
+  if (elementBox.top - window.innerHeight < distanceFromTop) {
+    return true
+  } else {
+    return false
+  }
+}
+
+function scanDocument() {
+  let sectionList = document.querySelectorAll('.hide')
+  sectionList.forEach(function (section) {
+    if (isVisible(section)) {
+      section.classList.remove('hide')
+      section.classList.add('show')
+    }
+  })
+}
+
+document.addEventListener('scroll', scanDocument)
+
+//parallax  effect
+
+const parallax_bg = document.querySelectorAll('.parallax')
+
+parallax_bg.forEach((image) => {
+  window.addEventListener('scroll', () => {
+    image.style.backgroundPosition = `50% ${window.scrollY / 2}px`
+  })
+})
