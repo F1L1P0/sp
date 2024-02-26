@@ -1474,6 +1474,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1519,11 +1524,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1560,6 +1560,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -1584,8 +1588,12 @@ video {
   padding-top: 1rem;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-left {
@@ -2042,6 +2050,10 @@ footer p {
     padding-right: 5rem;
   }
 
+  .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2069,6 +2081,12 @@ footer p {
   .md\:hover\:text-yellow-400:hover {
     --tw-text-opacity: 1;
     color: rgb(250 204 21 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
   }
 }
 
