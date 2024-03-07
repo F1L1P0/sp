@@ -114,7 +114,7 @@ function animateValue(id, start, end, duration) {
 function isInViewport(element) {
   var rect = element.getBoundingClientRect()
   return (
-    rect.top >= 0 &&
+    rect.top >= 50 &&
     rect.left >= 0 &&
     rect.bottom <=
       (window.innerHeight || document.documentElement.clientHeight) &&
