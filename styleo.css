@@ -877,6 +877,14 @@ video {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .max-h-20 {
   max-height: 5rem;
 }
@@ -1315,16 +1323,68 @@ video {
   background-image: url('./fotky/1.jpg');
 }
 
-.bg-\[url\(\'\.\/fotky\/10\.jpg\'\)\] {
-  background-image: url('./fotky/10.jpg');
-}
-
 .bg-\[url\(\'\.\/fotky\/sp_bg\.webp\'\)\] {
   background-image: url('./fotky/sp_bg.webp');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/fotky\/12\.jpg\'\)\] {
+  background-image: url('./fotky/12.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/14\.jpg\'\)\] {
+  background-image: url('./fotky/14.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/1\161\.jpg\'\)\] {
+  background-image: url('./fotky/1š.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/13\.jpg\'\)\] {
+  background-image: url('./fotky/13.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/15\.jpg\'\)\] {
+  background-image: url('./fotky/15.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/15\.jpeg\'\)\] {
+  background-image: url('./fotky/15.jpeg');
+}
+
+.bg-\[url\(\'\.\/fotky\/2\.jpg\'\)\] {
+  background-image: url('./fotky/2.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/3\.jpg\'\)\] {
+  background-image: url('./fotky/3.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/4\.jpg\'\)\] {
+  background-image: url('./fotky/4.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/5\.jpg\'\)\] {
+  background-image: url('./fotky/5.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/6\.jpg\'\)\] {
+  background-image: url('./fotky/6.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/7\.jpg\'\)\] {
+  background-image: url('./fotky/7.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/8\.jpg\'\)\] {
+  background-image: url('./fotky/8.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/9\.jpg\'\)\] {
+  background-image: url('./fotky/9.jpg');
 }
 
 .from-pink-500 {
@@ -1640,6 +1700,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1825,6 +1893,10 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
 }
 
 .duration-300 {
