@@ -775,6 +775,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -833,6 +837,10 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-7 {
@@ -921,8 +929,16 @@ video {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-7 {
   width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-auto {
@@ -1158,6 +1174,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1291,8 +1311,12 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\.\/fotky\/img1\.webp\'\)\] {
-  background-image: url('./fotky/img1.webp');
+.bg-\[url\(\'\.\/fotky\/1\.jpg\'\)\] {
+  background-image: url('./fotky/1.jpg');
+}
+
+.bg-\[url\(\'\.\/fotky\/10\.jpg\'\)\] {
+  background-image: url('./fotky/10.jpg');
 }
 
 .bg-\[url\(\'\.\/fotky\/sp_bg\.webp\'\)\] {
@@ -1362,6 +1386,10 @@ video {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1400,6 +1428,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-32 {
@@ -1540,6 +1572,10 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -1568,6 +1604,10 @@ video {
   padding-right: 0.25rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -1584,16 +1624,20 @@ video {
   padding-top: 5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pb-28 {
-  padding-bottom: 7rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -1711,6 +1755,11 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -2050,10 +2099,6 @@ footer p {
     padding-right: 5rem;
   }
 
-  .md\:pb-32 {
-    padding-bottom: 8rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -2093,3 +2138,11 @@ footer p {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
